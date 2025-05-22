@@ -1,0 +1,30 @@
+@mixin tiposboton ($padding)
+{
+    font-family: loos-wide, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  color: whitesmoke;
+  background-color: rgb(216, 53, 51);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: 0;
+  cursor: pointer;
+  padding: $padding;
+  transition: all 1s ease-in-out;
+
+}
+
+
+button { 
+    @include tiposboton(5px)
+  
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.servicios__cta__boton {
+  @include tiposboton(20px 30px 20px 30px)
+
+}

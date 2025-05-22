@@ -1,0 +1,67 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: #101479;
+  }
+  
+  .custom-navbar {
+    background-color: #101479; 
+    font-family: "loos-wide", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+ 
+  #logo {
+    width: 120px; 
+  }
+  
+
+  .nav-link {
+    color: white !important;
+    font-weight: 400;
+    font-family: "loos-wide", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    padding: 10px 15px;
+    font-size: 16px;
+  
+    &:hover {
+      color: #f8f9fa !important;
+      text-decoration: underline;
+    }
+  }
+  
+  .navbar-toggler-icon {
+    display: block;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    background: transparent;
+    border: none;
+  
+    &::before,
+    &::after,
+    span {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 4px;
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+  
+    &::before {
+      top: 0;
+    }
+  
+    &::after {
+      bottom: 0;
+    }
+  
+    span {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  
