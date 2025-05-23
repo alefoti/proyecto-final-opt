@@ -605,6 +605,7 @@ iframe {
   }
   .imgservicios {
     width: 100%;
+    box-sizing: border-box;
   }
   .servicios_mobile {
     display: flex;
